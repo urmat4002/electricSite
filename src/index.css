@@ -1,13 +1,222 @@
-body {
+/*Обнуление*/
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+html,
+body {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.nav0 p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.nav0 h1 {
+  font-size: 30px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav0 {
+  height: 60%;
+  display: flex;
+}
+
+.nav0_icon {
+  width: 50px;
+  margin: 0 10px 0 0;
+}
+.nav0_icon img {
+  width: 100%;
+}
+
+.nav0_content {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav0_logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6495ed;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 25px;
+}
+
+li a {
+  color: black;
+}
+
+li a:hover {
+  color: #696969;
+  border-bottom: 1px solid black;
+}
+
+header {
+  height: 130px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: #4169e1;
+}
+
+.content {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  background: url('electric.jpg') 0 0/100% no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.uslugi {
+}
+
+.uslugi_flex {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid black;
+}
+
+.uslugi h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card_uslugi {
+  border: 2px solid #4169e1;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.card_uslugi h1 {
+  padding: 8px;
+  background-color: #4169e1;
+  font-size: 30px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
+}
+
+.card_uslugi p {
+  padding: 5px;
+  font-size: 20px;
 }
