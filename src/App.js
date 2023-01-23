@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <div className="wrapper">
-      <header>
+      <header className="header">
         <div className="nav0">
           <div className="container">
             <div className="nav0_content">
