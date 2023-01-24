@@ -39,7 +39,7 @@ export default function App() {
                 </div>
               </div>
               <div className="nav0_tel">
-                <p>0600000000</p>
+                <p>0600000001</p>
                 <p>0500000000</p>
               </div>
             </div>
