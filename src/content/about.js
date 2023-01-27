@@ -5,7 +5,7 @@ export default function About(props) {
   return (
     <div className="about">
       <div className="container">
-        <h1>Мы самые крутые</h1>
+        <h1>Мы самые крутые!</h1>
       </div>
     </div>
   )
